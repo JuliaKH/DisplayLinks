@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <!-- <script src="script.js"></script> -->
+    <!-- <script>
+        $(document).ready(function(){
+            $("#news").hover(function(){
+                $(".news").slideToggle("fast"); 
+            });
+            $("#books").hover(function(){
+                $(".books").slideToggle("fast");
+            });
+            $("#contacts").click(function(){
+                $(".contacts").slideToggle("slow");
+            });
+        });
+    </script> -->
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <ul class="menu">
+            <li class="menuElement"><a href="#">Home</a></li>
+            <li class="menuElement" id="news"><a href="#" onclick=Submenu(0)>News</a></li>
+            <li class="menuElement" id="books"><a href="#" onclick=Submenu(1)>Books</a></li>
+            <li class="menuElement" ><a href="#">About</a></li>
+            <li class="menuElement" id="contacts"><a href="#" onclick=Submenu(2)>Contacts</a></li>
+        </ul>
+    </nav>
+    <ul class="sub news">
+        <li><a href="#">Last News</a></li>
+        <li><a href="#">World News</a></li>
+        <li><a href="#">Ukraine News</a></li>
+        <li><a href="#">Blogs</a></li>
+    </ul>
+    <ul class="sub books">
+        <li><a href="#">Economy</a></li>
+        <li><a href="#">Policy</a></li>
+        <li><a href="#">Law</a></li>
+        <li><a href="#">Life</a></li>
+    </ul>
+    <ul class="sub contacts">
+        <li><a href="#">Company</a></li>
+    </ul>
+    <div class="container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="img/Guitar.jpg" alt="guitar">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="img/kristen_stewart.jpg" alt="kristen">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="img/girl_walking.jpg" alt="girl">
+        </div>
+        <a class="prev" onclick="plusSlides(-1),disableMenu();">&#10094;</a>
+        <a class="next" onclick="plusSlides(1),disableMenu();">&#10095;</a>
+    </div>
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1),disableMenu()"></span>
+        <span class="dot" onclick="currentSlide(2),disableMenu()"></span>
+        <span class="dot" onclick="currentSlide(3),disableMenu()"></span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
