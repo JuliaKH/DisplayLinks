@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/timetb.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Shadows+Into+Light" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="hero-image">
+            <div class="hero-text">
+                <h1 style="font-size:50px">Павленко Микита Петрович</h1>
+                <p style="padding-top: 20px; font-size: 24px;">Персональний сайт викладача</p>
+            </div>
+        </div>
+
+        <!--<img src="img/123.png" height="200px">-->
+    </div>
+
+</header>
+<nav>
+    <div id="mySidenav" class="sidenav">
+        <a href="index.html" id="biography">Біографія</a>
+        <a href="subjects.html" id="inform">Інформація про дисципліни</a>
+        <a href="timetb.html" id="timetb">Розклад занять викладача</a>
+        <a href="public.html" id="public">Список наукових публікацій</a>
+    </div>
+    <div id="menuToggle">
+        <!--
+        A fake / hidden checkbox is used as click reciever,
+        so you can use the :checked selector on it.
+        -->
+        <input type="checkbox" />
+        <!--
+        Some spans to act as a hamburger.
+
+        They are acting like a real hamburger,
+        not that McDonalds stuff.
+        -->
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+            <a href="index.html"><li>Біографія</li></a>
+            <a href="subjects.html"><li>Інформація про дисципліни</li></a>
+            <a href="timetb.html"><li>Розклад занять викладача</li></a>
+            <a href="public.html" target="_blank"><li>Список наукових публікацій</li></a>
+        </ul>
+    </div>
+</nav>
+
+<section id="contain">
+    <div class="container" style="overflow-x:auto;">
+        <table>
+            <caption>Розклад занять викладача</caption>
+            <tbody>
+            <tr>
+                <th>Дата</th>
+                <th>Урок 1</th>
+                <th>Урок 2</th>
+                <th>Урок 3</th>
+                <th>Урок 4</th>
+                <th>Урок 5</th>
+                <th>Урок 6</th>
+            </tr>
+            <tr>
+                <td bgcolor="#dddddd" style="text-align: center!important;">1 тиждень</td>
+                <td colspan="6" bgcolor="#dddddd"></td>
+            </tr>
+            <tr>
+                <td style="text-align: center!important;"><b>Пн</b></td>
+                <td></td>
+                <td></td>
+                <td class="lk"><b>2165 ЛК</b> Технології проектування комп`ютерних систем</td>
+                <td class="lk"><b>2165 ЛК</b> Технології проектування комп`ютерних систем</td>
+                <td class="lab"><b>2165 ЛР</b> Технології проектування комп`ютерних систем</td>
+                <td class="lab"><b>2129 ЛР</b> Інженерія програмного забезпечення</td>
+            </tr>
+            <tr>
+                <td style="text-align: center!important;"><b>Вт</b></td>
+                <td></td>
+                <td class="pract"><b>2428 ПЗ</b> Інженерія програмного забезпечення</td>
+                <td class="lk"><b>5128 ЛК</b> Web-програмування</td>
+                <td class="lk"><b>5128 ЛК</b> Web-програмування</td>
+                <td class="lab"><b>2331 ЛР</b> Паралельні та розподілені обчислення</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="text-align: center!important;"><b>Ср</b></td>
+                <td class="lk"><b>2225 ЛК</b> Паралельні та розподілені обчислення </td>
+                <td class="lk"><b>2225 ЛК</b> Паралельні та розподілені обчислення </td>
+                <td class="lk"><b>2225 ЛК</b> Комп`ютерні мережі </td>
+                <td class="lk"><b>2225 ЛК</b> Комп`ютерні мережі </td>
+                <td class="lk"><b>12 ЛК</b> Політологія </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="text-align: center!important;"><b>Чт</b></td>
+                <td class="lab"><b>2331 ЛР</b> Паралельні та розподілені обчислення</td>
+                <td class="lab"><b>2332 ЛР</b> Web-програмування</td>
+                <td class="lk"><b>2420 ЛК</b> Інженерія програмного забезпечення</td>
+                <td class="lk"><b>2420 ЛК</b> Інженерія програмного забезпечення</td>
+                <td class="pract"><b>2420 ПЗ</b> Політологія </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="text-align: center!important;"><b>Пт</b></td>
+                <td></td>
+                <td class="pract"><b>2413 ПЗ</b> Менеджмент і маркетинг</td>
+                <td class="lab"><b>2331 ЛР</b> Комп`ютерні мережі</td>
+                <td class="lk"><b>5128 ЛК</b> Менеджмент і маркетинг</td>
+                <td></td>
+                <td></td>
+            </tr>
+            </tbody>
+            <tbody>
+            <tr>
+                <td bgcolor="#dddddd" style="text-align: center!important;">2 тиждень</td>
+                <td colspan="6" bgcolor="#dddddd"></td>
+            </tr>
+            <tr>
+                <td style="text-align: center!important;"><b>Пн</b></td>
+                <td></td>
+                <td></td>
+                <td class="lk"><b>2165 ЛК</b> Технології проектування комп`ютерних систем</td>
+                <td class="lk"><b>2165 ЛК</b> Технології проектування комп`ютерних систем</td>
+                <td class="lab"><b>2165 ЛР</b> Технології проектування комп`ютерних систем</td>
+                <td class="lab"><b>2129 ЛР</b> Інженерія програмного забезпечення</td>
+            </tr>
+            <tr>
+                <td style="text-align: center!important;"><b>Вт</b></td>
+                <td></td>
+                <td class="pract"><b>2428 ПЗ</b> Інженерія програмного забезпечення</td>
+                <td class="lk"><b>5128 ЛК</b> Web-програмування</td>
+                <td class="lk"><b>5128 ЛК</b> Web-програмування</td>
+                <td class="lab"><b>2331 ЛР</b> Паралельні та розподілені обчислення</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="text-align: center!important;"><b>Ср</b></td>
+                <td class="lk"><b>2225 ЛК</b> Паралельні та розподілені обчислення </td>
+                <td class="lk"><b>2225 ЛК</b> Паралельні та розподілені обчислення </td>
+                <td class="lk"><b>2225 ЛК</b> Комп`ютерні мережі </td>
+                <td class="lk"><b>2225 ЛК</b> Комп`ютерні мережі </td>
+                <td class="lk"><b>12 ЛК</b> Політологія </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="text-align: center!important;"><b>Чт</b></td>
+                <td class="lab"><b>2331 ЛР</b> Паралельні та розподілені обчислення</td>
+                <td class="lab"><b>2332 ЛР</b> Web-програмування</td>
+                <td class="lk"><b>2420 ЛК</b> Інженерія програмного забезпечення</td>
+                <td class="lk"><b>2420 ЛК</b> Інженерія програмного забезпечення</td>
+                <td class="lk"><b>2420 ЛК </b>Інженерія програмного забезпечення</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="text-align: center!important;"><b>Пт</b></td>
+                <td></td>
+                <td class="pract"><b>2329 ПЗ</b> Технології проектування комп`ютерних систем </td>
+                <td class="lab"><b>2331 ЛР</b> Комп`ютерні мережі</td>
+                <td class="lk"><b>5128 ЛК</b> Менеджмент і маркетинг</td>
+                <td></td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+<section id="additional">
+    <div class="container">
+        <hr> <hr>
+        <h2 align="center">Новини та події</h2>
+        <div class="flex-container-news">
+            <div class="news">
+                <div><img src="img/test.jpg" style="width: 310px; height: 207px;"></div>
+                <div class="text">
+                    <h3>НОВОВВЕДЕННЯ! Поява тестів на сайті!</h3>
+                    <p class="sub">February 10, 2018</p>
+                    <p>Додані тести з технічний дисциплін на тему "«Веб-програмування», «Програмування мовою C#» ". Запрошую до його виконання.</p>
+                    <a href="#">Відкрити тест</a>
+                </div>
+            </div>
+            <div class="news">
+                <div><img src="img/web.jpg" style="width: 310px; height: 207px;"></div>
+                <div class="text">
+                    <h3>У розробці</h3>
+                    <p class="sub">January 20, 2018</p>
+                    <p>Одним з головних нововведенням 2018 рік стане запуск сервісу з тестування "Знань учнів".
+                        Перед публікацією на сайті, пройде кілька етапів тестування. Про всі новини Ви дізнаєтеся першими.</p>
+                    <a href="#">Детальніше</a>
+                </div>
+            </div>
+            <!--<div class="news">-->
+                <!--<div><img src="img/concurs.jpg" style="width: 310px; height: 207px;"></div>-->
+                <!--<div class="text">-->
+                    <!--<h3>Підсумки конкурсу "Краща методична розробка"</h3>-->
+                    <!--<p class="sub">May 23, 2017</p>-->
+                    <!--<p>Відповідно до плану роботи НМЦ коледжу на 2016-2017 н.р.., А також з метою виявлення і поширення передового педагогічного досвіду; активізації діяльності учасників освітнього процесу по використанню інформаційних технологій; впровадження і поширення сучасних інноваційних освітніх технологій, в ГБПОУ «ВГППК» відбувся конкурс «Краща методична розробка».</p>-->
+                    <!--<a href="#">Детальніше</a>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="flex-container">
+            <div class="name"><p>© 2018 Сайт викладача</p></div>
+            <div class="contacts">
+                <p>Контакти:</p><hr>
+                <p>sk8ergirl1007@gmail.com</p>
+            </div>
+            <div class="adress">
+                <p>Адреса:</p><hr>
+                <p>м. Вінниця</p>
+            </div>
+        </div>
+
+    </div>
+</footer>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script src="scripts/slideshow.js"></script>
+<script src="scripts/button.js"></script>
+</body>
+</html>
